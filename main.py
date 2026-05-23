@@ -39,6 +39,11 @@ class Book:
     @staticmethod
     def is_valid_price(price: float) -> bool:
         return price > 0
+        
+    @staticmethod
+    def is_long_book(pages: int) -> bool:
+        """Returns True if the book has more than 300 pages."""
+        return pages > 300
 
     def borrow(self):
         
