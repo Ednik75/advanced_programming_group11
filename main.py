@@ -60,7 +60,15 @@ class Book:
             print(f"  '{self.title}' has been returned successfully.")
         else:
             print(f"    '{self.title}' is already available.")
+    def get_info(self) -> str:
+    """Returns a short summary string about the book."""
 
+    status = "available" if self.available else "not available"
+
+    return (
+        f"'{self.title}' by {self.author} - "
+        f"{self.pages} pages, ${self.price:.2f}"
+    )
 
 class DigitalBook(Book):
     
