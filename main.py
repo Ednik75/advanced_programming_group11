@@ -64,6 +64,11 @@ class Book:
 
 class DigitalBook(Book):
     
+    def __repr__(self) -> str:
+        return (
+                f"DigitalBook(title='{self.title}', author='{self.author}',"
+                f"pages={self.pages}, price={self.price:.2f} FCFA, available={self.available},"
+                f"file_size_mb={self.file_size_mb:.1f}, file_format='{self.file_format}')"    )
 
     def __init__(self, title: str, author: str, pages: int, price: float,
                  available: bool, file_size_mb: float, file_format: str):
