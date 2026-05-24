@@ -60,6 +60,7 @@ class Book:
             print(f"  '{self.title}' has been returned successfully.")
         else:
             print(f"    '{self.title}' is already available.")
+    
     def get_info(self) -> str:
     """Returns a short summary string about the book."""
 
