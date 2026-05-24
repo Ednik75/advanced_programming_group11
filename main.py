@@ -1,15 +1,4 @@
-# ===== BOOK 3 =====
 
-book3_name = input("Enter third book name: ")
-book3_price = float(input("Enter third book price: "))
-book3_quantity = int(input("Enter quantity: "))
-
-book3_total = book3_price * book3_quantity
-
-print(f"\nBook Name: {book3_name}")
-print(f"Book Price: {book3_price}")
-print(f"Quantity: {book3_quantity}")
-print(f"Total Price: {book3_total}")
 class Book:
     
     
@@ -171,6 +160,16 @@ def main():
 
     book2 = DigitalBook(title2, author2, pages2, price2, avail2, size2, format2)
     library.append(book2)
+    book3_name = input("Enter third book name: ")
+    book3_price = float(input("Enter third book price: "))
+    book3_quantity = int(input("Enter quantity: "))
+    
+    book3_total = book3_price * book3_quantity
+    
+    print(f"\nBook Name: {book3_name}")
+    print(f"Book Price: {book3_price}")
+    print(f"Quantity: {book3_quantity}")
+    print(f"Total Price: {book3_total}")
 
     
     print("\n── Book Actions ────────────────────────────────────────")
