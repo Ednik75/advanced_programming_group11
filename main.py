@@ -62,6 +62,7 @@ class Book:
             print(f"    '{self.title}' is already available.")
     
     def get_info(self) -> str:
+        
     """Returns a short summary string about the book."""
 
     status = "available" if self.available else "not available"
